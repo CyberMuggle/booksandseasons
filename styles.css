@@ -1,0 +1,132 @@
+
+/* FOUNDATION */
+
+* {
+    /* outline: 0.5px solid lightblue; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* >>> MOBILE VERSION <<< */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+h2 {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 60ch;
+}
+
+/* HEADER */
+
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    letter-spacing: 0.02em;
+}
+
+header h1 a {
+    color: inherit;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* HEADER --> navigation */
+
+a {
+    text-decoration: none;
+}
+
+a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    color: inherit;
+}
+
+/* FOOTER */
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* >>> DESKTOP VERSION <<< */
+
+@media (min-width: 1200px) {
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .textImageBlock {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .textLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .container img {
+        width: 36%;
+    }
+
+    .cover-img {
+        width: 100%;
+        max-height: 60vh;
+        object-fit: cover;
+        display: block;
+    }
+}
