@@ -137,6 +137,14 @@ footer {
 
 /* SINGLE POST ============================================================ */
 
+.single-post-header {
+    margin-bottom: 2rem;
+}
+
+.single-post-header h1 {
+    margin-bottom: 0.6rem;
+}
+
 .single-post-sidebar {
     display: none;
 }
@@ -152,10 +160,12 @@ article p {
 .single-post-meta {
     font-size: 0.9rem;
     color: var(--color-border);
+    margin-bottom: 0.4rem;
 }
 
 .single-post-disclosure {
-
+    font-size: 0.9rem;
+    color: var(--color-border);
 }
 
 /* =========================
