@@ -149,6 +149,10 @@ footer {
     display: none;
 }
 
+article {
+    max-width: 75ch;
+}
+
 article h2 {
     margin-top: 2.5rem;
 }
@@ -217,12 +221,16 @@ article p {
 
     .single-post-layout {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns:
+            minmax(0,1fr)
+            minmax(0,720px)
+            minmax(320px,360px);
         gap: 4rem;
     }
 
     .single-post-sidebar {
         display: block;
+        grid-column: 3;
         min-height: 150px;
         background-color: var(--color-surface);
         border: 1px solid var(--color-border);
@@ -232,10 +240,14 @@ article p {
     .single-post-featured-image img {
         width: 100%;
         border-radius: 12px;
-        max-height: 450px;
+        max-height: 520px;
         object-fit: cover;
     }
 
+    .single-post-layout article {
+        grid-column: 2;
+        width: 100%;
+    }
 
 }
 
