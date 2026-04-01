@@ -137,6 +137,10 @@ footer {
 
 /* SINGLE POST ============================================================ */
 
+.single-post-meta-rail {
+    display: none;
+}
+
 .single-post-header {
     margin-bottom: 2.5rem;
 }
@@ -239,6 +243,10 @@ article p {
     }
 
     /* SINGLE POST ============================================================ */
+
+    .single-post-meta-rail {
+        display: block;
+    }
 
     .single-post-layout {
         display: grid;
