@@ -149,16 +149,13 @@ footer {
     display: none;
 }
 
-article {
-    max-width: 75ch;
-}
-
 article h2 {
     margin-top: 2.5rem;
 }
 
 article p {
     font-size: 1.15rem;
+    max-width: 75ch;
 }
 
 .single-post-meta {
@@ -222,10 +219,11 @@ article p {
     .single-post-layout {
         display: grid;
         grid-template-columns:
-            minmax(0,1fr)
-            minmax(0,720px)
-            minmax(320px,360px);
-        gap: 4rem;
+        1fr
+        minmax(0,720px)
+        minmax(320px,360px)
+        1fr;
+        gap: 2rem;
     }
 
     .single-post-sidebar {
@@ -246,7 +244,6 @@ article p {
 
     .single-post-layout article {
         grid-column: 2;
-        width: 100%;
     }
 
 }
