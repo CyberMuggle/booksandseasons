@@ -168,6 +168,11 @@ article p {
     color: var(--color-border);
 }
 
+.single-post-featured-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
 /* =========================
     DESKTOP
 ========================= */
@@ -222,7 +227,14 @@ article p {
         background-color: var(--color-surface);
         border: 1px solid var(--color-border);
         border-radius: 12px;
-}
+    }
+
+    .single-post-featured-image img {
+        width: 100%;
+        border-radius: 12px;
+        max-height: 450px;
+        object-fit: cover;
+    }
 
 
 }
