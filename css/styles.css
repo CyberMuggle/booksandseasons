@@ -132,8 +132,8 @@ header ul {
 footer {
     background-color: var(--color-depth);
     color: var(--color-bg);
-    padding-top: 2rem;
-    padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+    padding-top: 1rem;
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
 }
 
 footer .container {
@@ -218,7 +218,6 @@ article p {
     font-size: 0.95rem;
     font-style: italic;
     color: var(--color-text);
-    max-width: 65ch;
 }
 
 .single-post-disclosure a {
@@ -240,6 +239,17 @@ article p {
     border-radius: 0;
     max-height: 58vh;
     object-fit: cover;
+}
+
+.single-post-standfirst {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    max-width: 65ch;
+    margin-top: 1.4rem;
+    margin-bottom: 2.2rem;
+    color: var(--color-text);
+    border-left: solid 4px var(--color-accent);
+
 }
 
 /* =========================
@@ -319,6 +329,10 @@ article p {
         border-radius: 12px;
         max-height: 520px;
         object-fit: cover;
+    }
+
+    .single-post-meta {
+        display: none;
     }
 
 }
