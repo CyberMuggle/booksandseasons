@@ -131,13 +131,8 @@ header ul {
 footer {
     background-color: var(--color-depth);
     color: var(--color-bg);
-    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
-}
-
-@supports (-webkit-touch-callout: none) {
-    footer {
-        padding-bottom: max(2.5rem, env(safe-area-inset-bottom));
-    }
+    padding-top: 2rem;
+    padding-bottom: calc(3rem + env(safe-area-inset-bottom));
 }
 
 footer .container {
