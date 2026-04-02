@@ -22,7 +22,7 @@
     --color-accent: #D17632;
     --color-surface: #F5EAE2;
     --color-border: #C9A88C;
-    --color-depth: #3D1E2E;
+    --color-depth: #9C4E2B;
 }
 
 body {
@@ -132,6 +132,7 @@ footer .container {
 footer {
     background-color: var(--color-depth);
     color: var(--color-bg);
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
 }
 
 
