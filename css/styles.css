@@ -129,11 +129,8 @@ header ul {
 
 /* FOOTER ============================================================ */
 
-.footer-region {
-    background-color: var(--color-depth);
-}
-
 footer {
+    background-color: var(--color-depth);
     color: var(--color-bg);
     padding-top: 2rem;
     padding-bottom: calc(2rem + env(safe-area-inset-bottom));
