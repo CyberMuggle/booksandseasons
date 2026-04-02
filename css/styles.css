@@ -125,7 +125,20 @@ header ul {
 }
 
 
+
 /* FOOTER ============================================================ */
+
+footer {
+    background-color: var(--color-depth);
+    color: var(--color-bg);
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+@supports (-webkit-touch-callout: none) {
+    footer {
+        padding-bottom: max(2.5rem, env(safe-area-inset-bottom));
+    }
+}
 
 footer .container {
     display: flex;
@@ -133,16 +146,6 @@ footer .container {
     align-items: center;
 }
 
-footer {
-    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
-}
-
-
-@supports (-webkit-touch-callout: none) {
-    footer {
-        padding-bottom: max(2.5rem, env(safe-area-inset-bottom));
-    }
-}
 
 
 /* SINGLE POST ============================================================ */
