@@ -40,7 +40,7 @@ main {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1600px;
     margin-inline: auto;
     padding: 1.5rem;
 }
@@ -137,9 +137,40 @@ footer {
 
 /* SINGLE POST ============================================================ */
 
-.single-post-meta-rail {
+/* ====== Single Post - Left Sidebar */
+
+.single-post-left-sidebar {
     display: none;
+    font-size: 0.9rem;
+    color: var(--color-text);
 }
+
+.single-post-meta-author {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.single-post-meta-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.single-post-meta-facts p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-border);
+}
+
+.single-post-category-tags p {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+/* ====== Single Post - Header */
 
 .single-post-header {
     margin-bottom: 2.5rem;
@@ -244,21 +275,28 @@ article p {
 
     /* SINGLE POST ============================================================ */
 
-    .single-post-meta-rail {
-        display: block;
-    }
-
     .single-post-layout {
         display: grid;
-        grid-template-columns:
-        1fr
-        minmax(0,720px)
-        minmax(320px,360px)
-        1fr;
-        gap: 2rem;
+        grid-template-columns: 300px 1fr 300px;
+        justify-content: center;
+        gap: 4rem;
     }
 
-    .single-post-sidebar {
+    .single-post-left-sidebar {
+        display: block;
+        grid-column: 1;
+        max-height: 300px;
+        background-color: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .single-post-layout article {
+        grid-column: 2;
+    }
+
+    .single-post-right-sidebar {
         display: block;
         grid-column: 3;
         min-height: 150px;
@@ -272,10 +310,6 @@ article p {
         border-radius: 12px;
         max-height: 520px;
         object-fit: cover;
-    }
-
-    .single-post-layout article {
-        grid-column: 2;
     }
 
 }
