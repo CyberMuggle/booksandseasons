@@ -254,6 +254,54 @@ article p {
     color: var(--color-text);
 }
 
+/* ====== Single Post - Next Read */
+
+.single-post-next-read {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.section-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+.next-read-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.next-read-card a {
+    display: block;
+    color: inherit;
+}
+
+.next-read-kicker {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+}
+
+.next-read-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.next-read-excerpt {
+    margin-bottom: 0;
+    max-width: 55ch;
+}
+
+
+
+
 /* =========================
     DESKTOP
 ========================= */
