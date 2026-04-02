@@ -142,6 +142,10 @@ footer .container {
     align-items: center;
 }
 
+.footer-notice {
+    font-size: 0.95rem;
+}
+
 
 
 /* SINGLE POST ============================================================ */
@@ -248,8 +252,6 @@ article p {
     margin-top: 1.4rem;
     margin-bottom: 2.2rem;
     color: var(--color-text);
-    border-left: solid 4px var(--color-accent);
-
 }
 
 /* =========================
