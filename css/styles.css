@@ -27,6 +27,7 @@
 
 html {
     background-color: var(--color-depth);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -130,16 +131,34 @@ header ul {
 /* FOOTER ============================================================ */
 
 footer {
-    background-color: var(--color-depth);
-    color: var(--color-bg);
-    padding-top: 1rem;
-    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+    /* background-color: var(--color-depth);
+    color: var(--color-bg); */
 }
 
 footer .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+}
+
+.back-to-top-bar a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-bg);
+    background-color: var(--color-accent);
+}
+
+.back-to-top-bar a:hover {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+}
+
+.back-to-top-bar a:focus-visible {
+    outline: 3px solid var(--color-bg);
+    outline-offset: -3px;
 }
 
 .footer-notice {
