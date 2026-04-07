@@ -190,7 +190,7 @@ header ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-1);
     margin-top: var(--space-6);
     text-align: center;
 }
@@ -225,6 +225,8 @@ header ul {
 .footer-top a:hover {
     background-color: var(--color-depth);
     color: var(--color-on-dark);
+    text-decoration: underline;
+    text-underline-offset: var(--space-1);
 }
 
 .footer-top a:focus-visible {
@@ -243,7 +245,6 @@ footer {
     display: flex;
     flex-direction: column;
     margin-block: var(--space-6);
-    border-top: 1px solid var(--color-border);
 }
 
 .footer-nav-mobile details {
@@ -252,6 +253,10 @@ footer {
 
 .footer-nav-mobile details[open] summary::after {
     content: "−";
+}
+
+.footer-nav-mobile details[open] summary {
+    color: var(--color-link-hover);
 }
 
 .footer-nav-mobile summary {
@@ -265,6 +270,10 @@ footer {
     font-weight: 700;
     line-height: 1.4;
     cursor: pointer;
+}
+
+.footer-nav-mobile summary:active {
+    background-color: color-mix(in srgb, var(--color-border) 25%, transparent);
 }
 
 .footer-nav-mobile summary::-webkit-details-marker {
@@ -281,6 +290,7 @@ footer {
 
 .footer-nav-mobile summary:hover {
     color: var(--color-link-hover);
+    background-color: color-mix(in srgb, var(--color-border) 18%, transparent);
 }
 
 .footer-nav-mobile summary:focus-visible {
@@ -303,7 +313,7 @@ footer {
 
 .footer-nav-mobile a {
     display: block;
-    width: fit-content;
+    width: 100%;
     padding-block: var(--space-1);
     color: var(--color-link);
     text-decoration: none;
@@ -330,7 +340,7 @@ footer {
     padding-top: var(--space-1);
     padding-bottom: var(--space-5);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .footer-bottom > span {
@@ -342,7 +352,7 @@ footer {
 }
 
 .footer-bottom-legal a {
-    display: block;
+    display: inline-block;
     padding-block: var(--space-1);
 }
 
