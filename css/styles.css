@@ -571,12 +571,13 @@ article p {
     }
 
     .footer-bottom {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: var(--space-6);
-        padding-top: 0;
-        text-align: left;
+        gap: var(--space-3);
+        padding-top: var(--space-5);
+        text-align: center;
+        border-top: 1px solid var(--color-border);
     }
 
     .footer-bottom-legal {
@@ -587,7 +588,21 @@ article p {
         list-style: none;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: var(--space-4);
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom-legal li + li::before {
+        content: "|";
+        margin-inline: var(--space-2);
+        color: color-mix(in srgb, var(--color-text) 60%, var(--color-bg) 40%);
+    }
+
+    .footer-bottom-legal li {
+        display: flex;
+        align-items: center;
     }
 
 
