@@ -345,12 +345,13 @@ footer {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: var(--space-5);
+    gap: var(--space-3);
 }
 
 .footer-social-list a {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: var(--space-2);
 }
 
@@ -358,6 +359,7 @@ footer {
     width: 32px;
     height: 32px;
     opacity: 0.85;
+    transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
 .social-label {
@@ -381,7 +383,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-4);
+    gap: var(--space-2);
     padding-top: var(--space-1);
     padding-bottom: var(--space-5);
     text-align: center;
@@ -599,7 +601,8 @@ article p {
 
     .footer-bottom-legal li + li::before {
         content: "|";
-        margin-inline: var(--space-2);
+        margin-left: var(--space-3);
+        margin-right: var(--space-3);
         color: color-mix(in srgb, var(--color-text) 50%, var(--color-bg) 50%);
     }
 
