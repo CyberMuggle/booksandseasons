@@ -351,13 +351,17 @@ footer {
 .footer-social-list a {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: var(--space-2);
 }
 
 .social-icon {
     width: 32px;
     height: 32px;
     opacity: 0.85;
+}
+
+.social-label {
+    font-size: 0.9rem;
 }
 
 .footer-social-list a:hover .social-icon {
@@ -590,14 +594,13 @@ article p {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: var(--space-4);
         font-size: 0.9rem;
     }
 
     .footer-bottom-legal li + li::before {
         content: "|";
         margin-inline: var(--space-2);
-        color: color-mix(in srgb, var(--color-text) 60%, var(--color-bg) 40%);
+        color: color-mix(in srgb, var(--color-text) 50%, var(--color-bg) 50%);
     }
 
     .footer-bottom-legal li {
