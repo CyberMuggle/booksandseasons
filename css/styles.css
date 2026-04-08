@@ -190,7 +190,7 @@ header ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: var(--space-1);
     margin-top: var(--space-6);
     text-align: center;
 }
@@ -199,13 +199,12 @@ header ul {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: var(--space-2);
     color: var(--color-text);
 }
 
 .footer-tagline {
     margin: 0;
-    margin-top: var(--space-1);
     font-size: 1rem;
     line-height: 1.5;
     color: color-mix(in srgb, var(--color-text) 78%, var(--color-bg) 22%);
@@ -233,6 +232,49 @@ header ul {
 .footer-top a:focus-visible {
     outline: 3px solid var(--color-focus-ring);
     outline-offset: -3px;
+}
+
+/* ==== social links */
+
+.footer-social {
+    margin-top: var(--space-4);
+    text-align: center;
+}
+
+.footer-social-title {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-2);
+    color: color-mix(in srgb, var(--color-text) 75%, var(--color-bg) 25%);
+}
+
+.footer-social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+}
+
+.footer-social-list a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 28px;
+    height: 28px;
+    opacity: 0.85;
+}
+
+.footer-social-list a:hover .social-icon {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.footer-social-list a:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: var(--space-1);
+    border-radius: var(--radius-sm);
 }
 
 /* ==== mobile expandable menu */
