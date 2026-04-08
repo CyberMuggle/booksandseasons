@@ -190,7 +190,7 @@ header ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-1);
+    gap: 0;
     margin-top: var(--space-6);
     text-align: center;
 }
@@ -199,12 +199,13 @@ header ul {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-2);
+    gap: 0;
     color: var(--color-text);
 }
 
 .footer-tagline {
     margin: 0;
+    margin-top: var(--space-1);
     font-size: 1rem;
     line-height: 1.5;
     color: color-mix(in srgb, var(--color-text) 78%, var(--color-bg) 22%);
